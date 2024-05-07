@@ -1,0 +1,20 @@
+# Sleepr
+
+## Reservations
+
+### Create a reservation
+POST http://localhost:3000/reservations
+content-type: application/json
+
+{
+  "startDate": "2021-10-01",
+  "endDate": "2021-10-05",
+  "placeId": "1",
+  "invoiceId": "1"
+}
+
+### Get all reservations
+GET http://localhost:3000/reservations
+
+### Get a reservation
+GET http://localhost:3000/reservations/1
