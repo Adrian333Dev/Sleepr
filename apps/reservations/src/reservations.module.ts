@@ -21,4 +21,8 @@ import {
   controllers: [ReservationsController],
   providers: [ReservationsService, ReservationsRepo],
 })
-export class ReservationsModule {}
+export class ReservationsModule {
+  constructor() {
+    console.log('ReservationsModule loaded!!!');
+  }
+}

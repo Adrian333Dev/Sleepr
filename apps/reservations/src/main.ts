@@ -17,6 +17,7 @@ async function bootstrap() {
     }),
   );
   app.useLogger(app.get(Logger));
+  console.log('Reservations service is running on port 3000');
   await app.listen(3000);
 }
 bootstrap();
